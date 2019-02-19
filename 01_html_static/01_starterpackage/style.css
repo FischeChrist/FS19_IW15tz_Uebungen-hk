@@ -9,9 +9,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-body {
-  color: white;
-  background-color: coral;
+section {
+  color: black;
+  background-color: white;
+  padding: 5rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -20,6 +21,11 @@ body {
   text-align: left;
 }
 
+body {
+  color: black;
+  background-color: coral;
+  margin: 0;
+}
 
 
 .card {
