@@ -29,13 +29,14 @@ body {
 
 .grid-container {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 0px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  width: 50%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -43,12 +44,24 @@ body {
   border-radius: 0.25rem;
 }
 
-.grid-item1 {
-  padding: 2rem;
+.grid-item {
+  padding-left: 2rem;
+  background-color: green;
+}
+.grid-item_name {
+  padding-left: 2rem;
   background-color: red;
 }
 
-.grid-item2 {
-  grid-column: 2 / span 3;
+.grid-item_pic {
+  text-align: right;
+  padding: 2rem;
+  grid-column: 2 / span 2;
   background-color: blue;
 }
+
+.grid-item_list {
+  padding-left: 2rem;
+  background-color: pink;
+}
+
