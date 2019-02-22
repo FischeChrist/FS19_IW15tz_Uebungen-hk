@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans'); /* Alternative to using link in HTML head, 
-source: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file*/
-
-
-
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
+/* Alternative to using link in HTML head, 
+source: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+Frage: Was ist tatsächlich besser?
+*/
 
 body {
   background: #abbaab;
