@@ -37,27 +37,30 @@
               <!-- http://html5pattern.com/Dates -->
               <!-- https://www.w3schools.com/howto/howto_css_inline_form.asp -->
 
-             <form class="form-inline" action="/action_page.php">
+<!-- START Formular -->
+            <form class="form-inline" action="/action_page.php">
+                <label for="email">Category: </label>
+                <!-- Differences Between HTML and XHTML for <input>:
+                In HTML, the <input> tag has no end tag.
+                In XHTML, the <input> tag must be properly closed, like this <input />. -->
 
+            <!-- INPUT 1, Eingabefeld -->
+            <input type="email" id="email" placeholder="Enter email" name="email">
+                <label for="pwd">Activity: </label>
 
-<!-- Differences Between HTML and XHTML for <input>:
-In HTML, the <input> tag has no end tag.
-In XHTML, the <input> tag must be properly closed, like this <input />. -->
-
-
-
-              <label for="email">Category: </label>
-              <input type="email" id="email" placeholder="Enter email" name="email">
-              <label for="pwd">Activity: </label>
-
-              <input type="text" id="pwd" placeholder="Enter password" name="pswd">
+            <!-- INPUT 2, Eingabefeld -->
+            <input type="text" id="pwd" placeholder="Enter password" name="pswd">
               <label>
-                <input type="checkbox" name="remember"> Remember me
+
+            <!-- INPUT 3, Checkbox -->
+            <input type="checkbox" name="remember"> Remember me
               </label>
-              <button type="submit">Submit</button>
+
+            <!-- Button -->
+            <button type="submit">Submit</button>
 
             </form>
-
+<!-- END Formular -->
 
         </div>
         <script type="text/javascript">
