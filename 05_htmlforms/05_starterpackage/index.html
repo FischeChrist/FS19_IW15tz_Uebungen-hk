@@ -88,8 +88,10 @@
         <div class="mb-3">
           <label for="username">Datum</label>
           <div class="input-group">
-            
-            <input type="text" class="form-control" id="username" placeholder="Startdatum" required="">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Startdatum</span>
+            </div>
+            <input type="date" class="form-control" id="start-date" required="">
             <div class="invalid-feedback" style="width: 100%;">
               Bitte Startdatum wählen.
             </div>
@@ -99,7 +101,8 @@
           <div class="input-group">            
             <div class="input-group-prepend">
               <span class="input-group-text">Enddatum</span>
-            </div><input type="text" class="form-control" id="username" placeholder="Enddatum" required="">
+            </div>
+            <input type="date" class="form-control" id="end-date" required="">
             <div class="invalid-feedback" style="width: 100%;">
               Bitte Enddatum wählen.
             </div>
@@ -111,7 +114,7 @@
           <label for="address">Ort</label>
           <input type="text" class="form-control" id="address" placeholder="Wähle einen Ort" required="">
           <div class="invalid-feedback">
-            Please enter your shipping address.
+            Bitte gib einen Ort ein.
           </div>
         </div>
 
