@@ -69,67 +69,62 @@
 <!-- START TEST BODY von https://getbootstrap.com/docs/4.3/examples/checkout/ -->
 <body class="bg-light">
     <div class="container">
-  <div class="py-5 text-center">
-    <!--<img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-    <h2>Formular Test</h2>
-    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-  </div>
 
   <div class="row">
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Suche deine Aktivität!</h4>
+      <h4 class="mb-3">Finde deine Aktivität!</h4>
       <form class="needs-validation" novalidate="">
 
-        <div class="row">          
-          <div class="col-md-6 mb-3">
+        <div class="mb-3">          
+
             <label for="firstName">Suchbegriff</label>
             <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
             <div class="invalid-feedback">
-              Valid first name is required.
+              Bitte Suchbegriff eingeben.
             </div>
           </div>          
-        </div>
+
 
         <div class="mb-3">
-          <label for="username">Username</label>
+          <label for="username">Datum</label>
           <div class="input-group">
             
-            <div class="input-group-prepend">
-              <span class="input-group-text">Startdatum</span>
-            </div><input type="text" class="form-control" id="username" placeholder="Username" required="">
+            <input type="text" class="form-control" id="username" placeholder="Startdatum" required="">
             <div class="invalid-feedback" style="width: 100%;">
               Bitte Startdatum wählen.
             </div>
           </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
+
+          <div class="input-group">            
+            <div class="input-group-prepend">
+              <span class="input-group-text">Enddatum</span>
+            </div><input type="text" class="form-control" id="username" placeholder="Enddatum" required="">
+            <div class="invalid-feedback" style="width: 100%;">
+              Bitte Enddatum wählen.
+            </div>
           </div>
         </div>
 
+
         <div class="mb-3">
-          <label for="address">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+          <label for="address">Ort</label>
+          <input type="text" class="form-control" id="address" placeholder="Wähle einen Ort" required="">
           <div class="invalid-feedback">
             Please enter your shipping address.
           </div>
         </div>
 
-        <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
 
         <div class="row">
           <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
+            <label for="country">Umkreis</label>
             <select class="custom-select d-block w-100" id="country" required="">
-              <option value="">Choose...</option>
-              <option>United States</option>
+              <option value="">Auswahl...</option>
+              <option>5 km</option>
+              <option>10 km</option>
+              <option>15 km</option>
+              <option>... km</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid country.
@@ -153,7 +148,25 @@
             </div>
           </div>
         </div>
+
+<button type="submit">Suchen!</button>
+
+
         <hr class="mb-4">
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+
+          <div class="invalid-feedback">
+            Bitte gültige E-mail-Adresse eingeben.
+          </div>
+        </div>
+
+
       </form>
 
 
