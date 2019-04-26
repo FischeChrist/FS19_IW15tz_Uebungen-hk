@@ -7,3 +7,5 @@ var person = {
 		alert("Hi, my name is " + firstName + " " + lastName);
 		)
 }
+
+alert((new Date()).getFullYear());
